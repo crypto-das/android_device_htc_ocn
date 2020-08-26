@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_ocn.mk
+    $(LOCAL_DIR)/aosp_ocn.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_ocn-user \
-    lineage_ocn-userdebug \
-    lineage_ocn-eng
+    aosp_ocn-user \
+    aosp_ocn-userdebug \
+    aosp_ocn-eng

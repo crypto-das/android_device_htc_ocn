@@ -18,14 +18,17 @@
 PRODUCT_RELEASE_NAME := ocn
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/htc/ocn/full_ocn.mk)
 
 ## Device identifier. This must come after all inclusions
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_GAPPS_ARCH := arm64
+CUSTOM_BUILD_TYPE := UNOFFICIAL
 PRODUCT_DEVICE := ocn
-PRODUCT_NAME := lineage_ocn
+PRODUCT_NAME := aosp_ocn
 PRODUCT_BRAND := HTC
 PRODUCT_MODEL := HTC U11
 PRODUCT_MANUFACTURER := HTC
